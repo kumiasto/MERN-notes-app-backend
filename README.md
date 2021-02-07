@@ -12,7 +12,7 @@
 * dark mode
 
 
-### Technologies
+### Technologies used:
 * React (Context API, Hooks, React Router)
 * NodeJS
 * ExpressJS
