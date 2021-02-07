@@ -25,4 +25,4 @@
 #### The back-end is hosted on Heroku. 
 
 ### Front End:
-#### The front-end is hosted on Netlify.[Front End repository](https://github.com/kumiasto/notes-app-frontend)
+#### The front-end is hosted on Netlify. [Front End repository](https://github.com/kumiasto/notes-app-frontend)
