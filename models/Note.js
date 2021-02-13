@@ -9,7 +9,7 @@ const noteSchema = new mongoose.Schema(
     title: {
       type: String,
       required: [true, "Tytuł nie może być pusty"],
-      maxlength: [25, "Tytuł nie może być dłuższy niż 30 znaków"],
+      maxlength: [25, "Tytuł nie może być dłuższy niż 25 znaków"],
       trim: true,
     },
     content: {
