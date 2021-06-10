@@ -40,7 +40,8 @@ module.exports.notes_get = async (req, res) => {
     const data = await Note.find(
       { user: req.user },
       Note.title,
-      Note.createdAt
+      Note.content,
+      Note.createdAt,
     );
     res.status(200).json(data);
   } catch (err) {
