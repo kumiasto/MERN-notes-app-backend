@@ -14,7 +14,7 @@ const noteSchema = new mongoose.Schema(
     },
     content: {
       type: String,
-      required: [true, "Note cannot be empty"],
+      required: [true, "Content cannot be empty"],
       trim: true,
     },
     user: {
