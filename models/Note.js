@@ -8,16 +8,16 @@ const noteSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      required: [true, "Tytuł nie może być pusty"],
-      maxlength: [25, "Tytuł nie może być dłuższy niż 25 znaków"],
+      required: [true, "Title cannot be empty"],
+      maxlength: [25, "Title cannot be longer than 25 characters"],
       trim: true,
     },
     content: {
       type: String,
-      required: [true, "Notatka nie może być pusta"],
+      required: [true, "Note cannot be empty"],
       trim: true,
     },
-    user: {
+    user: 
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
