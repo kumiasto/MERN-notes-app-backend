@@ -17,7 +17,7 @@ const noteSchema = new mongoose.Schema(
       required: [true, "Note cannot be empty"],
       trim: true,
     },
-    user: 
+    user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
