@@ -5,15 +5,15 @@ const bcrypt = require("bcrypt");
 const userSchema = new mongoose.Schema({
   email: {
     type: String,
-    required: [true, "To pole jest wymagane"],
+    required: [true, "This field is required"],
     unique: true,
     lowercase: true,
-    validate: [isEmail, "Wprowadź poprawny email"],
+    validate: [isEmail, "Please type a valid email"],
   },
   password: {
     type: String,
-    required: [true, "To pole jest wymagane"],
-    minlength: [7, "Hasło musi mieć minimum 7 znaków"],
+    required: [true, "This field is required"],
+    minlength: [7, "Password must be greater than 7 characters"],
   },
 });
 
@@ -46,18 +46,18 @@ userSchema.statics.userLogin = async function (email, password) {
       return user;
     } else {
       if (password === "") {
-        passwordError.notEmpty = "To pole jest wymagane";
+        passwordError.notEmpty = "This field is required";
       } else {
-        passwordError.invalid = "Błędne hasło";
+        passwordError.invalid = "Invalid password";
       }
     }
   } else {
     if (email === "") {
-      emailError.notEmpty = "To pole jest wymagane";
+      emailError.notEmpty = "This field is required";
     } else if (!isEmail(email)) {
-      emailError.invalid = "Błędny email";
+      emailError.invalid = "Invalid email";
     } else {
-      emailError.notExist = "Taki użytkownik nie istnieje";
+      emailError.notExist = "User with this login does not exist";
     }
   }
 
