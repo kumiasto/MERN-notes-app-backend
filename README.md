@@ -1,7 +1,5 @@
 # MERN Notes App
 
-## [Live preview](https://affectionate-fermi-96e2e0.netlify.app/)
-
 ### Functionality:
 * possibility to create account
 * add note
@@ -22,9 +20,3 @@
 * bcrypt
 
 ***
-
-### Back End:
-#### The back-end is hosted on Heroku. 
-
-### Front End:
-#### The front-end is hosted on Netlify. [Front End repository](https://github.com/kumiasto/notes-app-frontend).
